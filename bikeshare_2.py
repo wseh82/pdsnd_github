@@ -31,7 +31,7 @@ def get_filters():
     while city not in CITY_DATA:
         city = input('\nPlease enter the city you wish to see data for: Chicago, New York City, or Washington? ').lower()
         if city not in CITY_DATA:
-            print('You have entered an incorrect value, namely:', city, '  Please try again.\nOr if you do not wish to proceed then please exit the program')
+            print('You have entered an invalid city, namely:', city, '  Please try again.\nOr if you do not wish to proceed then please exit the program')
 
     # get user input for month (all, january, february, ... , june)
     month = ''
@@ -228,8 +228,8 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
 
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        yes_to_restart = input('\nPlease enter yes to restart program.\n')
+        if yes_to_restart.lower() != 'yes':
             break
 
 
