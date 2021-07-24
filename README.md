@@ -9,7 +9,11 @@ Bikeshare data program
 ### Description
 This program allows user entry to analyze bikeshare data from
 3 cities: Chicago, New York City and Washington.
-The user can select to see either all information from a particular city, or can choose to see what happened on a particular day or a particular for the city chosen.
+Once the user has selected the city, they can choose to see either of the following for that city:
+    - All the bikeshare data.
+    - The data for any month between January and June.
+    - The data for any weekday for all the months
+    - The data for any month between January and June and any weekday for that month.
 
 ### Files used
 The data files used are:
