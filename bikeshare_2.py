@@ -16,6 +16,8 @@ DAY_DATA = {'Monday': 0, 'Tuesday': 1, 'Wednesday': 2, 'Thursday': 3,
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
+    The city can only be either Chicago, New York City or Washington.
+    The month can only be from January to June inclusive.
 
     Returns:
         (str) city - name of the city to analyze
