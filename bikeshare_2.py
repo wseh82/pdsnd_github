@@ -29,7 +29,7 @@ def get_filters():
     while city not in CITY_DATA:
         city = input('\nPlease enter the city you wish to see data for: Chicago, New York City, or Washington? ').lower()
         if city not in CITY_DATA:
-            print('You have entered an incorrect value, namely:', city, '  Please try again.\nOr if you do not wish to proceed then please exit the program')
+            print('You have entered an invalid city, namely:', city, '  Please try again.\nOr if you do not wish to proceed then please exit the program')
 
     # get user input for month (all, january, february, ... , june)
     month = ''
